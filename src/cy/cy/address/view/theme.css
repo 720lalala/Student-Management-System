@@ -1,0 +1,141 @@
+.background {
+    -fx-background-image: url("file:image/07.jpg");
+    -fx-background-size: 102% 102%;
+}
+.login-header{
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: #fff;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+
+}
+.login-header2{
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 16px;
+    -fx-text-alignment: center;
+}
+
+.login-label{
+    -fx-font-size: 16pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #fff;
+    -fx-opacity: 1;
+
+}
+
+.button {
+
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: black;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-font-weight:bold;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+.button2{
+    -fx-padding: 5 2 5 2;
+    -fx-border-width: 2;
+    -fx-font-size: 11pt;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+}
+.buttonEdit {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 0, 0;
+}
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: black;
+}
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 0 0 0; /* 0 3 0 3 */
+}
+.background2 {
+    -fx-background-color:black;
+    -fx-background-size: 100% 100%;
+}
+
+
+
+.tab{
+    -fx-background-color:   black;
+    -fx-text-fill: #ffffff;
+
+}
+
+.tab:hover{
+    -fx-background-color:   black;}
+
+.tab:selected{
+    -fx-background-color:#ffffff;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 25;
+}
+.background3 {
+    -fx-background-image: url("file:image/07.jpg");
+    -fx-background-size: 102% 102%;
+}
+
+.label3{
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+.label4{
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #1c76ff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+

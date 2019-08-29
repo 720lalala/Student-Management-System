@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cy.cy.address.Controller.StudentSearchController">
+  <children>
+    <TableView fx:id="studentTable" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <columns>
+        <TableColumn prefWidth="89.0" text="学号" fx:id="snoColumn" />
+        <TableColumn prefWidth="89.0" text="姓名" fx:id="snameColumn" />
+        <TableColumn prefWidth="60.0" text="性别" fx:id="ssexColumn" />
+        <TableColumn prefWidth="90.0" text="班级" fx:id="classesColumn" />
+        <TableColumn prefWidth="85.0" text="修改" fx:id="editColumn" />
+        <TableColumn prefWidth="85.0" text="删除" fx:id="deleteColumn" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>

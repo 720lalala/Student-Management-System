@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="main" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cy.cy.address.Controller.mainController">
+  <center>
+    <TabPane prefHeight="265.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+      <stylesheets>
+        <URL value="@rootLayout.css" />
+      </stylesheets>
+      <tabs>
+        <Tab text="学生管理">
+          <fx:include fx:id="StuMan" source="StudentInformation.fxml" prefHeight="430.0" prefWidth="800.0" />
+        </Tab>
+        <Tab  text="课程管理">
+          <fx:include fx:id="CouMan" source="CourseInformation.fxml" prefHeight="430.0" prefWidth="800.0" />
+        </Tab>
+        <Tab text="成绩管理" onSelectionChanged="#refleshGra">
+          <fx:include fx:id="GraMan" source="GradeInformation.fxml" prefHeight="430.0" prefWidth="800.0" />
+        </Tab>
+        <Tab text="信息统计 ">
+          <fx:include fx:id="InfCou" source="InformationCount.fxml" prefHeight="430.0" prefWidth="800.0" />
+        </Tab>
+      </tabs>
+    </TabPane>
+  </center>
+  <top>
+    <AnchorPane minHeight="40.0" prefHeight="38.000099999997474" prefWidth="800.0" styleClass="background3">
+      <children>
+        <Button mnemonicParsing="false" onAction="#handleexit" text="退出登录" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="4.0" />
+        <Label layoutX="324.0" layoutY="7.0" styleClass="login-header" text="Doublebit666" />
+      </children>
+      <stylesheets>
+        <URL value="@theme.css" />
+      </stylesheets>
+    </AnchorPane>
+  </top>
+</BorderPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="340.0" prefWidth="300.0" styleClass="background, background2" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cy.cy.address.Controller.CourseDialogController">
+  <children>
+    <GridPane layoutY="40.0" prefHeight="245.0" prefWidth="260.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+      <children>
+        <Label styleClass="label3" text="课程号" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label styleClass="label3" text="课程名" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label styleClass="label3" text="班级" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField id="ClassesField" fx:id="CnoField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField id="SnameField" fx:id="CnameField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="ClassesField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Button layoutY="278.0" mnemonicParsing="false" onAction="#handleOk" text="确定" AnchorPane.leftAnchor="50.0" />
+    <Button layoutY="278.0" mnemonicParsing="false" onAction="#handleCancel" text="取消" AnchorPane.rightAnchor="50.0" />
+  </children>
+  <stylesheets>
+    <URL value="@theme.css" />
+  </stylesheets>
+</AnchorPane>

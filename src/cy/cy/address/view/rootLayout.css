@@ -1,0 +1,14 @@
+.tab{
+    -fx-background-color:  #fff;
+    -fx-text-fill: #ffffff;
+
+}
+
+.tab:hover{
+    -fx-background-color:   #808080;}
+
+.tab:selected{
+    -fx-background-color:#b0c4de;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 25;
+}

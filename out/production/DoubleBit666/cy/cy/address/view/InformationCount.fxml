@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cy.cy.address.Controller.InformationCountController">
+  <children>
+    <TabPane fx:id="tabpane" depthTest="INHERIT" mouseTransparent="false" pickOnBounds="false" prefHeight="200.0" prefWidth="200.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="学生性别">
+          <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+              <children>
+                <PieChart id="PieChart" fx:id="pieChartsex" prefWidth="579.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <Label fx:id="caption" layoutX="76.0" layoutY="52.0" text="" />
+                <Button mnemonicParsing="false" onAction="#reflesh1" text="刷新" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="30.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="学生班别">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <PieChart id="PieChart" fx:id="pieChartclass" prefHeight="399.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <Button mnemonicParsing="false" onAction="#reflesh2" text="刷新" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+                <Label fx:id="caption2" layoutX="92.0" layoutY="51.0" text="" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="课程人数">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <BarChart fx:id="cnoBar" prefHeight="399.0" prefWidth="738.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="0.0">
+                  <xAxis>
+                    <CategoryAxis side="BOTTOM" />
+                  </xAxis>
+                  <yAxis>
+                    <NumberAxis side="LEFT" />
+                  </yAxis>
+                </BarChart>
+                <Button layoutX="738.0" layoutY="20.0" mnemonicParsing="false" onAction="#reflesh3" text="刷新" />
+                <Label fx:id="caption3" layoutX="745.0" layoutY="199.0" text="" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="分数段">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Label fx:id="tip" layoutX="400.0" layoutY="16.0" prefHeight="21.0" prefWidth="286.0" styleClass="label4" text="">
+                  <stylesheets>
+                    <URL value="@theme.css" />
+                  </stylesheets>
+                </Label>
+                <Button layoutX="249.0" layoutY="13.0" mnemonicParsing="false" onAction="#setSearch" text="双击查询">
+                  <stylesheets>
+                    <URL value="@theme.css" />
+                  </stylesheets>
+                </Button>
+                <TextField fx:id="search" layoutX="96.0" layoutY="16.0" prefWidth="143.0" />
+                <Label fx:id="caption4" layoutX="687.0" layoutY="19.0" text="" />
+                <BarChart fx:id="gradeBar" prefHeight="349.0" prefWidth="727.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="50.0">
+                  <xAxis>
+                    <CategoryAxis side="BOTTOM" />
+                  </xAxis>
+                  <yAxis>
+                    <NumberAxis side="LEFT" />
+                  </yAxis>
+                </BarChart>
+                <Label layoutX="723.0" layoutY="135.0" styleClass="label4" text="合格率">
+                  <stylesheets>
+                    <URL value="@theme.css" />
+                  </stylesheets>
+                </Label>
+                <Label fx:id="searchresult" layoutX="723.0" layoutY="171.0" prefWidth="70.0" styleClass="label4" text="">
+                  <stylesheets>
+                    <URL value="@theme.css" />
+                  </stylesheets>
+                </Label>
+                <Label layoutX="40.0" layoutY="16.0" styleClass="label4" text="课程号：">
+                  <stylesheets>
+                    <URL value="@theme.css" />
+                  </stylesheets>
+                </Label>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
